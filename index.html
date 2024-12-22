@@ -1,0 +1,74 @@
+<!Doctype html>
+<html>
+
+<head>
+	<title>Thesis Attempts</title>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: monospace;
+	}
+
+	.container {
+		width: 100vw;
+		height: 100vh;
+	}
+
+	img {
+		max-width: 80%;
+		max-height: 80%;
+	}
+
+
+	.frame {
+		width: 100vw;
+		height: 100vh;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: fixed;
+
+		background-color: rgba(255, 255, 255, 0.5);
+
+		left: 0;
+		top: 0;
+	}
+
+	.name {
+		position: absolute;
+
+		background-color: white;
+		top: 75vh;
+		left: 20px;
+		padding: 50px;
+	}
+
+	.description {
+		position: absolute;
+		top: 75vh;
+		right: 20px;
+		width: 30vw;
+		padding: 50px;
+		background-color: white;
+		filter: blur(5px);
+		transition: 0.5s;
+	}
+
+	.description:hover {
+		filter: blur(0px);
+	}
+</style>
+
+<body>
+	<div class="container"></div>
+</body>
+
+</html>
+
+<script type="module" src="./script.js"></script>
