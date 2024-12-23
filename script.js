@@ -25,7 +25,6 @@ const create_frame = (image, person) => {
 	frame.innerHTML = `
 			<img style="transform: translate(${offset.x}px, ${offset.y}px)" src="${image}" class="image" />
 			<h3 class="name">${person.name}</h3>
-			<p class="description">${person.description}</p>
 		`
 	frame.onclick = click;
 	container.appendChild(frame);
@@ -39,8 +38,8 @@ function check_direction() {
 
 
 function get_offset() {
-	let v = () => Math.random() * offset_range - offset_range / 2
-	return { x: v(), y: v() }
+	let v = (r) => Math.random() * r - r / 2
+	return { x: v(.6 * window.innerWidth), y: v(.3 * window.innerHeight) }
 }
 
 function hide_frame(image_src) {
