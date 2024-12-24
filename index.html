@@ -1,88 +1,88 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Thesis Attempts</title>
-    <meta
-      charset="utf-8"
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-  </head>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: monospace;
-    }
+<head>
+  <title>Thesis Attempts</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
 
-    body {
-      transition: background-color 0.5s ease;
-    }
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+  }
 
-    .container {
-      width: 100vw;
-      height: 100vh;
-    }
 
-    img {
-      max-width: 80%;
-      max-height: 80%;
-    }
+  body {
+    transition: background-color 0.5s ease;
+  }
 
-    .frame {
-      width: 100vw;
-      height: 100vh;
+  .container {
+    width: 100vw;
+    height: 100vh;
+  }
 
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: fixed;
+  img {
+    max-width: 70%;
+    max-height: 70%;
+  }
 
-      background-color: rgba(255, 255, 255, 0.1);
+  .frame {
+    width: 100vw;
+    height: 100vh;
 
-      left: 0;
-      top: 0;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
 
-    .frame img {
-      box-shadow: 0 0 100px 50px rgba(255, 0, 225, 0.3);
-      border-radius: 15px;
-    }
+    background-color: rgba(255, 255, 255, 0.5);
 
-    .name {
-      position: absolute;
+    left: 0;
+    top: 0;
+  }
 
-      top: 75vh;
-      left: 20px;
-      padding: 50px;
-      font-size: 90px;
-    }
 
-    .description {
-      position: absolute;
-      top: 75vh;
-      right: 20px;
-      width: 30vw;
-      padding: 50px;
-      background-color: white;
-      filter: blur(5px);
-      transition: 0.5s;
-    }
+  .frame img {
+    box-shadow: 0 0 100px 50px rgba(255, 0, 225, 0.3);
+    padding: 10px;
+    border: 1px dotted #444;
+  }
 
-    .description:hover {
-      filter: blur(0px);
-    }
-  </style>
+  .name {
+    position: absolute;
+    font-weight: 100;
 
-  <body>
-    <div class="container"></div>
-  </body>
+    background-color: rgba(255, 255, 255, 0.9);
+    filter: blur(1px);
 
-  <div id="image-container">
-    <div></div>
+    bottom: 1em;
+    left: 1em;
+    padding: 0.25em;
+    border-top: 1px dotted #444;
+    font-size: 3em;
+  }
 
-    <script type="module" src="./script.js"></script>
-  </div>
+  /* People specific class if needed, lowecase first name as it comes in the data */
+  .zaid {
+    background-color: rgba(255, 255, 0, 0.5);
+  }
+
+  .yuxin {
+    background-color: rgba(255, 0, 255, 0.5);
+  }
+</style>
+
+<body>
+  <div class="container"></div>
+</body>
+
+<div id="image-container">
+  <div></div>
+
+  <script type="module" src="./script.js"></script>
+</div>
+
 </html>
